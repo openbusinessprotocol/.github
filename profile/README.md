@@ -1,43 +1,54 @@
 # Open Business Protocol
 
-**A shared vocabulary for goal-directed autonomous business operations.**
+**A universal grammar for describing business as a living system.**
 
-OBP defines what business concepts mean — universally, portably, and without vendor lock-in. When an agent writes an `_v.invoice`, any OBP-compatible system knows exactly what that record contains and how to work with it.
+OBP defines four irreducible primitives through which any business activity
+can be coherently described, organized, and evolved —
+by humans, AI agents, or any system that needs to interoperate.
 
 ---
 
-## What OBP Defines
+## The Four Bases
 
-- **`_v.*` Namespace Registry** — 58 ratified business concept definitions across Finance, CRM, HR, Operations, Marketing, Customer Success, Product, and Analytics
-- **Goal System** — `_v.goal` as the highest-order protocol primitive; agents resolve goals from nearest context outward
-- **Agent Behavior Spec** — what OBP-compliant agents MUST, SHOULD, and MUST NOT do
-- **Data Sovereignty Model** — your data stays yours; full portability via NDJSON export/import
+| Base | Role |
+|---|---|
+| **being** | The Subject. Any entity capable of directed action — human, AI, or organizational. |
+| **resource** | The Object. Anything a being can own, transform, consume, or create. |
+| **flow** | The Process. The structured description of change over time. |
+| **context** | The Frame. The conditions of meaning — market, purpose, environment. |
+
+These form two complementary pairs:
+
+- `being ↔ resource` — fluid coupling: ownership changes, value transforms
+- `flow ↔ context` — structural coupling: the same process in a different frame becomes a different act
+
+---
+
+## What OBP Is
+
+OBP is a protocol, not a product.
+Like ISO standards, it defines the conditions under which systems can interoperate —
+not what those systems should do or build.
+
+Systems that implement OBP are called **World Filters**.
+Each World Filter translates the universal grammar into the specific vocabulary of its domain.
+Because all World Filters share the same grammatical foundation,
+their descriptions remain mutually intelligible.
 
 ---
 
 ## Status
 
-> **v0.9** — All 58 v1.0 target namespaces ratified. Publication coming soon.
+> **v1.0** — First public specification published 2026-03-20.
 
-| Domain | Types |
-|--------|-------|
-| Universal | goal, contact, metric, task, schedule, knowledge, note, document, event, feedback |
-| Finance | invoice, payment, expense, contract, budget, estimate, receipt, subscription, payroll, tax_record |
-| CRM | deal, lead, activity, campaign, pipeline, quote |
-| HR | employee, job_posting, applicant, performance_review, leave_request, attendance, onboarding |
-| Operations | reservation, inventory, order, shipment, supplier, asset, location, purchase_order |
-| Marketing | content, audience, ab_test, landing_page |
-| Customer Success | ticket, sla, health_score, escalation |
-| Product | issue, milestone, sprint, roadmap, release |
-| Analytics | report, dashboard, funnel, cohort |
+→ [OBP v1.0 Specification](https://github.com/openbusinessprotocol/obp-spec)
 
 ---
 
 ## Governed by merit. Owned by no one.
 
-Namespace ratification is based on universality, stability, and non-redundancy — not payment or membership. Any party can propose a namespace via pull request.
+OBP aims to become a public good:
+a standard maintained by its community, owned by no single entity.
 
-**Founding maintainer**: [Spluc, LLC](https://spluc.jp)
-**Contact**: contact@openbusinessprotocol.org
-
-→ [openbusinessprotocol.org](https://openbusinessprotocol.org)
+**Founding maintainer:** [Spluc, LLC](https://spluc.jp)  
+**Contact:** contact@openbusinessprotocol.org
